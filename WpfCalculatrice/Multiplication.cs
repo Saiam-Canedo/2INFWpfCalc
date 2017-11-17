@@ -67,7 +67,7 @@ namespace WpfCalculatrice
 
         public string Affiche()
         {
-            return "The sum of " + val1.ToString()
+            return "The mult of " + val1.ToString()
                 + " and " + val2.ToString()
                 + " is " + (Multiplier()).ToString();
         }
