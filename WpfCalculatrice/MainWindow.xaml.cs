@@ -21,15 +21,15 @@ namespace WpfCalculatrice
     public partial class MainWindow : Window
     {
         private Addition addition;
-        private Soustraction soustraction;
-        private Multiplication multiplication;
+        //private Soustraction soustraction;
+        //private Multiplication multiplication;
         private Division division;
         public MainWindow()
         {
             InitializeComponent();
             addition = new Addition(0,0);
-            soustraction = new Soustraction(0, 0);
-            multiplication = new Multiplication(0, 0);
+            //soustraction = new Soustraction(0, 0);
+            //multiplication = new Multiplication(0, 0);
             division = new Division(0, 0);
         }
 
@@ -51,34 +51,34 @@ namespace WpfCalculatrice
 
         private void tbnSub_Click(object sender, RoutedEventArgs e)
         {
-            double dblNb1;
-            double dblNb2;
-            if (double.TryParse(tbxNombre1.Text, out dblNb1) && double.TryParse(tbxNombre2.Text, out dblNb2))
-            {
-                soustraction.setVal1(dblNb1);
-                soustraction.setVal2(dblNb2);
-                lblResulta.Content = soustraction.Soustraire().ToString();
-            }
-            else
-            {
-                MessageBox.Show("veuillez contrôler le format des nombre saisis !", "Convertion", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
+            //double dblNb1;
+            //double dblNb2;
+            //if (double.TryParse(tbxNombre1.Text, out dblNb1) && double.TryParse(tbxNombre2.Text, out dblNb2))
+            //{
+            //    soustraction.setVal1(dblNb1);
+            //    soustraction.setVal2(dblNb2);
+            //    lblResulta.Content = soustraction.Soustraire().ToString();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("veuillez contrôler le format des nombre saisis !", "Convertion", MessageBoxButton.OK, MessageBoxImage.Warning);
+            //}
         }
 
         private void tbnMult_Click(object sender, RoutedEventArgs e)
         {
-            double dblNb1;
-            double dblNb2;
-            if (double.TryParse(tbxNombre1.Text, out dblNb1) && double.TryParse(tbxNombre2.Text, out dblNb2))
-            {
-                multipication.setVal1(dblNb1);
-                multipication.setVal2(dblNb2);
-                lblResulta.Content = multipication.multiplier().ToString();
-            }
-            else
-            {
-                MessageBox.Show("veuillez contrôler le format des nombre saisis !", "Convertion", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
+            //double dblNb1;
+            //double dblNb2;
+            //if (double.TryParse(tbxNombre1.Text, out dblNb1) && double.TryParse(tbxNombre2.Text, out dblNb2))
+            //{
+            //    multipication.setVal1(dblNb1);
+            //    multipication.setVal2(dblNb2);
+            //    lblResulta.Content = multipication.multiplier().ToString();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("veuillez contrôler le format des nombre saisis !", "Convertion", MessageBoxButton.OK, MessageBoxImage.Warning);
+            //}
         }
 
         private void tbnDiv_Click(object sender, RoutedEventArgs e)
