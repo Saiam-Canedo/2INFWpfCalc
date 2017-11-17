@@ -57,7 +57,7 @@ namespace WpfCalculatrice
             {
                 soustraction.setVal1(dblNb1);
                 soustraction.setVal2(dblNb2);
-                lblResulta.Content = soustraction.Soustraire().ToString();
+                lblResulta.Content = soustraction.Soustrait().ToString();
             }
             else
             {
@@ -71,9 +71,9 @@ namespace WpfCalculatrice
             double dblNb2;
             if (double.TryParse(tbxNombre1.Text, out dblNb1) && double.TryParse(tbxNombre2.Text, out dblNb2))
             {
-                multipication.setVal1(dblNb1);
-                multipication.setVal2(dblNb2);
-                lblResulta.Content = multipication.multiplier().ToString();
+                multiplication.setVal1(dblNb1);
+                multiplication.setVal2(dblNb2);
+                lblResulta.Content = multiplication.Multiplier().ToString();
             }
             else
             {
