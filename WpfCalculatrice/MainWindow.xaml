@@ -16,7 +16,7 @@
         <Button x:Name="tbnSub" Content="-" HorizontalAlignment="Left" Margin="79,78,0,0" VerticalAlignment="Top" Width="48" Click="tbnSub_Click"/>
         <Button x:Name="tbnAdd" Content="+" HorizontalAlignment="Left" Margin="26,78,0,0" VerticalAlignment="Top" Width="48" Click="tbnAdd_Click"/>
         <Button x:Name="tbnMult" Content="*" HorizontalAlignment="Left" Margin="132,78,0,0" VerticalAlignment="Top" Width="48" Click="tbnMult_Click"/>
-        <Button x:Name="tbnDiv" Content="/" HorizontalAlignment="Left" Margin="185,78,0,0" VerticalAlignment="Top" Width="48" Click="tbnDiv_Click"/>
+        <Button x:Name="tbnDiv" Content="/" HorizontalAlignment="Left" Margin="166,22,0,0" VerticalAlignment="Top" Width="48" Click="tbnDiv_Click"/>
         <Label x:Name="lblResulta" Content="" HorizontalAlignment="Left" Margin="28,124,0,0" VerticalAlignment="Top"/>
 
     </Grid>
