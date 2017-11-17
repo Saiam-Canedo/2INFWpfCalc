@@ -29,10 +29,18 @@ namespace WpfCalculatrice
 
         private void tbnAdd_Click(object sender, RoutedEventArgs e)
         {
-            addition.setVal1(33);
-            addition.setVal2(44);
-            lblResulta.Content = addition.Addtionne().ToString();
-            MessageBox.Show(addition.Affiche());
+            double dblNb1;
+            double dblNb2;
+            if (double.TryParse(tbxNombre1.Text, out dblNb1) && double.TryParse(tbxNombre2.Text, out dblNb2))
+            {
+                addition.setVal1(dblNb1);
+                addition.setVal2(dblNb2);
+                lblResulta.Content = addition.Addtionne().ToString();
+            }
+            else
+            {
+                MessageBox.Show("veuillez contrôler le format des nombre saisis !", "Convertion", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
         }
 
         private void tbnSub_Click(object sender, RoutedEventArgs e)
